@@ -1,0 +1,6 @@
+2021/05/20 18:50:53 init.go:36: Mysql Startup Normal
+2021/05/20 18:50:53 main.go:37: Start to listening the incoming requests on http address: 127.0.0.1:9090
+2021/05/20 18:51:19 model.go:91: SQL语句设置失败 Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user WHERE id=?' at line 1
+2021/05/20 18:53:52 init.go:36: Mysql Startup Normal
+2021/05/20 18:53:52 main.go:37: Start to listening the incoming requests on http address: 127.0.0.1:9090
+2021/05/20 18:53:56 model.go:91: 参数添加失败 sql: converting argument $2 type: unsupported type model.User, a struct

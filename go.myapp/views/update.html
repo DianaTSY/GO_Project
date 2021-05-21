@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UpdateIndex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+<h1 class="text-primary">Update</h1>
+
+<form action="/update" method="Post">
+    <div class="row">
+            <div class="col">
+                <input type="text" readonly class="form-control" name="UserID" value={{.user.Id}} aria-label="UserID" placeholder={{.user.Id}} >
+            </div>
+            <div class="col">
+                    <input type="text" readonly class="form-control" value={{.user.User_name}} placeholder={{.user.User_name}}  aria-label="Username" name="username">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder={{.user.Password}} aria-label="Password" name="password" value={{.user.Password}}>
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Update</button>
+                <button type="button" class="btn btn-outline-success" onclick="location.href='/index'">Home</button>
+            </div>
+    </div>
+
+</form>
+
+</body>
+
+</html>

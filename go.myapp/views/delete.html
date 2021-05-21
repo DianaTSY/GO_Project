@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>DeleteIndex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1 class="text-primary">Delete</h1>
+    <form action="/delete" method="Post">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">User Id You Want to DELETE</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="userID" name="userID">
+        </div>
+        <button type="submit" class="btn btn-primary">Delete</button>
+        <button type="button" class="btn btn-outline-success" onclick="location.href='/index'">Home</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,6 @@
+2021/05/17 14:47:35 init.go:36: Mysql Startup Normal
+2021/05/17 14:47:35 main.go:31: Start to listening the incoming requests on http address: 127.0.0.1:9090
+2021/05/17 14:54:35 init.go:36: Mysql Startup Normal
+2021/05/17 14:54:35 main.go:31: Start to listening the incoming requests on http address: 127.0.0.1:9090
+2021/05/17 14:55:35 init.go:36: Mysql Startup Normal
+2021/05/17 14:55:35 main.go:31: Start to listening the incoming requests on http address: 127.0.0.1:9090

@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+<h1 class="text-primary">Sign Up</h1>
+
+    <form action="/signup" method="Post">
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" name="username">
+            </div>
+            <div class="col">
+                <input type="password" class="form-control" placeholder="Password" aria-label="Password" name="password">
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </form>
+
+
+        {{if.isDisplay}}
+            <em>{{.content1}}</em>
+        {{else}}
+            <em>{{.content2}}</em>
+        {{end}}
+        <h2 class="text-primary">Registered User</h2>
+
+        <table class="table table-hover" id="demo">
+        <tr><th>Id</th><th>Username</th><th>Password</th></tr>
+        {{range.users}}
+            <tr id ><td>{{.Id}}</td><td>{{.User_name}}</td><td>{{.Password}}</td>
+            </tr>
+        {{end}}
+        </table>
+        <button type="button" class="btn btn-outline-success" onclick="location.href='/index'">Home</button>
+</body>
+
+</html>

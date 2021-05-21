@@ -1,0 +1,314 @@
+2021/05/20 16:05:00 init.go:36: Mysql Startup Normal
+2021/05/20 16:05:00 main.go:36: Start to listening the incoming requests on http address: 127.0.0.1:9090
+2021/05/20 16:05:07 server.go:3139: http: panic serving 127.0.0.1:57322: html/template: "idnex.html" is undefined
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000334000)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1824 +0x153
+panic(0xd79b20, 0xc000283c80)
+	C:/Users/xm/go/go1.16.3/src/runtime/panic.go:971 +0x49a
+github.com/gin-gonic/gin.(*Context).Render(0xc00039e200, 0xc8, 0xede240, 0xc0002baa20)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:914 +0x185
+github.com/gin-gonic/gin.(*Context).HTML(0xc00039e200, 0xc8, 0xe1f453, 0xa, 0x0, 0x0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:923 +0xa5
+main.main.func1(0xc00039e200)
+	C:/Users/xm/Desktop/GO_Materials/go.web/main/main.go:32 +0x58
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000384000, 0xc00039e200)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:489 +0x2b0
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000384000, 0xee1130, 0xc0003820e0, 0xc00039e000)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:445 +0x165
+net/http.serverHandler.ServeHTTP(0xc00032a000, 0xee1130, 0xc0003820e0, 0xc00039e000)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc000334000, 0xee2880, 0xc0000702c0)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:3013 +0x3b8
+2021/05/20 16:05:07 server.go:3139: http: panic serving 127.0.0.1:57323: html/template: "idnex.html" is undefined
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0003340a0)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1824 +0x153
+panic(0xd79b20, 0xc000064340)
+	C:/Users/xm/go/go1.16.3/src/runtime/panic.go:971 +0x49a
+github.com/gin-gonic/gin.(*Context).Render(0xc000156f00, 0xc8, 0xede240, 0xc00002b2f0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:914 +0x185
+github.com/gin-gonic/gin.(*Context).HTML(0xc000156f00, 0xc8, 0xe1f453, 0xa, 0x0, 0x0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:923 +0xa5
+main.main.func1(0xc000156f00)
+	C:/Users/xm/Desktop/GO_Materials/go.web/main/main.go:32 +0x58
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000384000, 0xc000156f00)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:489 +0x2b0
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000384000, 0xee1130, 0xc0002ea000, 0xc00039e100)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:445 +0x165
+net/http.serverHandler.ServeHTTP(0xc00032a000, 0xee1130, 0xc0002ea000, 0xc00039e100)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc0003340a0, 0xee2880, 0xc0000703c0)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:3013 +0x3b8
+2021/05/20 16:05:07 server.go:3139: http: panic serving 127.0.0.1:57324: html/template: "idnex.html" is undefined
+goroutine 11 [running]:
+net/http.(*conn).serve.func1(0xc00007c0a0)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1824 +0x153
+panic(0xd79b20, 0xc000283eb0)
+	C:/Users/xm/go/go1.16.3/src/runtime/panic.go:971 +0x49a
+github.com/gin-gonic/gin.(*Context).Render(0xc000314200, 0xc8, 0xede240, 0xc0002bb4d0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:914 +0x185
+github.com/gin-gonic/gin.(*Context).HTML(0xc000314200, 0xc8, 0xe1f453, 0xa, 0x0, 0x0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:923 +0xa5
+main.main.func1(0xc000314200)
+	C:/Users/xm/Desktop/GO_Materials/go.web/main/main.go:32 +0x58
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000384000, 0xc000314200)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:489 +0x2b0
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000384000, 0xee1130, 0xc00032a0e0, 0xc000314100)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:445 +0x165
+net/http.serverHandler.ServeHTTP(0xc00032a000, 0xee1130, 0xc00032a0e0, 0xc000314100)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc00007c0a0, 0xee2880, 0xc000304340)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:3013 +0x3b8
+2021/05/20 16:05:09 server.go:3139: http: panic serving 127.0.0.1:57328: html/template: "idnex.html" is undefined
+goroutine 39 [running]:
+net/http.(*conn).serve.func1(0xc000334140)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1824 +0x153
+panic(0xd79b20, 0xc0000643a0)
+	C:/Users/xm/go/go1.16.3/src/runtime/panic.go:971 +0x49a
+github.com/gin-gonic/gin.(*Context).Render(0xc000314500, 0xc8, 0xede240, 0xc00002b440)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:914 +0x185
+github.com/gin-gonic/gin.(*Context).HTML(0xc000314500, 0xc8, 0xe1f453, 0xa, 0x0, 0x0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:923 +0xa5
+main.main.func1(0xc000314500)
+	C:/Users/xm/Desktop/GO_Materials/go.web/main/main.go:32 +0x58
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000384000, 0xc000314500)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:489 +0x2b0
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000384000, 0xee1130, 0xc00032a1c0, 0xc000157000)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:445 +0x165
+net/http.serverHandler.ServeHTTP(0xc00032a000, 0xee1130, 0xc00032a1c0, 0xc000157000)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc000334140, 0xee2880, 0xc00029b900)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:3013 +0x3b8
+2021/05/20 16:05:09 server.go:3139: http: panic serving 127.0.0.1:57329: html/template: "idnex.html" is undefined
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0xc00028f2c0)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1824 +0x153
+panic(0xd79b20, 0xc000064520)
+	C:/Users/xm/go/go1.16.3/src/runtime/panic.go:971 +0x49a
+github.com/gin-gonic/gin.(*Context).Render(0xc00039e400, 0xc8, 0xede240, 0xc00002bcb0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:914 +0x185
+github.com/gin-gonic/gin.(*Context).HTML(0xc00039e400, 0xc8, 0xe1f453, 0xa, 0x0, 0x0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:923 +0xa5
+main.main.func1(0xc00039e400)
+	C:/Users/xm/Desktop/GO_Materials/go.web/main/main.go:32 +0x58
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000384000, 0xc00039e400)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:489 +0x2b0
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000384000, 0xee1130, 0xc0003821c0, 0xc000314400)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:445 +0x165
+net/http.serverHandler.ServeHTTP(0xc00032a000, 0xee1130, 0xc0003821c0, 0xc000314400)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc00028f2c0, 0xee2880, 0xc000304580)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:3013 +0x3b8
+2021/05/20 16:05:09 server.go:3139: http: panic serving 127.0.0.1:57330: html/template: "idnex.html" is undefined
+goroutine 43 [running]:
+net/http.(*conn).serve.func1(0xc0003341e0)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1824 +0x153
+panic(0xd79b20, 0xc0000645a0)
+	C:/Users/xm/go/go1.16.3/src/runtime/panic.go:971 +0x49a
+github.com/gin-gonic/gin.(*Context).Render(0xc000157100, 0xc8, 0xede240, 0xc00002be90)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:914 +0x185
+github.com/gin-gonic/gin.(*Context).HTML(0xc000157100, 0xc8, 0xe1f453, 0xa, 0x0, 0x0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:923 +0xa5
+main.main.func1(0xc000157100)
+	C:/Users/xm/Desktop/GO_Materials/go.web/main/main.go:32 +0x58
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000384000, 0xc000157100)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:489 +0x2b0
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000384000, 0xee1130, 0xc0002ea0e0, 0xc00039e300)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:445 +0x165
+net/http.serverHandler.ServeHTTP(0xc00032a000, 0xee1130, 0xc0002ea0e0, 0xc00039e300)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc0003341e0, 0xee2880, 0xc000070740)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:3013 +0x3b8
+2021/05/20 16:05:09 server.go:3139: http: panic serving 127.0.0.1:57333: html/template: "idnex.html" is undefined
+goroutine 44 [running]:
+net/http.(*conn).serve.func1(0xc000334280)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1824 +0x153
+panic(0xd79b20, 0xc000064750)
+	C:/Users/xm/go/go1.16.3/src/runtime/panic.go:971 +0x49a
+github.com/gin-gonic/gin.(*Context).Render(0xc00039e600, 0xc8, 0xede240, 0xc0003fc7b0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:914 +0x185
+github.com/gin-gonic/gin.(*Context).HTML(0xc00039e600, 0xc8, 0xe1f453, 0xa, 0x0, 0x0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:923 +0xa5
+main.main.func1(0xc00039e600)
+	C:/Users/xm/Desktop/GO_Materials/go.web/main/main.go:32 +0x58
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000384000, 0xc00039e600)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:489 +0x2b0
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000384000, 0xee1130, 0xc0003822a0, 0xc00039e500)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:445 +0x165
+net/http.serverHandler.ServeHTTP(0xc00032a000, 0xee1130, 0xc0003822a0, 0xc00039e500)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc000334280, 0xee2880, 0xc000070b40)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:3013 +0x3b8
+2021/05/20 16:05:10 server.go:3139: http: panic serving 127.0.0.1:57334: html/template: "idnex.html" is undefined
+goroutine 45 [running]:
+net/http.(*conn).serve.func1(0xc000334320)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1824 +0x153
+panic(0xd79b20, 0xc000064850)
+	C:/Users/xm/go/go1.16.3/src/runtime/panic.go:971 +0x49a
+github.com/gin-gonic/gin.(*Context).Render(0xc00039e800, 0xc8, 0xede240, 0xc0003fcd50)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:914 +0x185
+github.com/gin-gonic/gin.(*Context).HTML(0xc00039e800, 0xc8, 0xe1f453, 0xa, 0x0, 0x0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:923 +0xa5
+main.main.func1(0xc00039e800)
+	C:/Users/xm/Desktop/GO_Materials/go.web/main/main.go:32 +0x58
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000384000, 0xc00039e800)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:489 +0x2b0
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000384000, 0xee1130, 0xc000382380, 0xc00039e700)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:445 +0x165
+net/http.serverHandler.ServeHTTP(0xc00032a000, 0xee1130, 0xc000382380, 0xc00039e700)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc000334320, 0xee2880, 0xc000070ec0)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:3013 +0x3b8
+2021/05/20 16:05:10 server.go:3139: http: panic serving 127.0.0.1:57336: html/template: "idnex.html" is undefined
+goroutine 54 [running]:
+net/http.(*conn).serve.func1(0xc00007c140)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1824 +0x153
+panic(0xd79b20, 0xc000308660)
+	C:/Users/xm/go/go1.16.3/src/runtime/panic.go:971 +0x49a
+github.com/gin-gonic/gin.(*Context).Render(0xc000314700, 0xc8, 0xede240, 0xc000303e30)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:914 +0x185
+github.com/gin-gonic/gin.(*Context).HTML(0xc000314700, 0xc8, 0xe1f453, 0xa, 0x0, 0x0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:923 +0xa5
+main.main.func1(0xc000314700)
+	C:/Users/xm/Desktop/GO_Materials/go.web/main/main.go:32 +0x58
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000384000, 0xc000314700)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:489 +0x2b0
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000384000, 0xee1130, 0xc00032a2a0, 0xc000314600)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:445 +0x165
+net/http.serverHandler.ServeHTTP(0xc00032a000, 0xee1130, 0xc00032a2a0, 0xc000314600)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc00007c140, 0xee2880, 0xc000304880)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:3013 +0x3b8
+2021/05/20 16:05:16 server.go:3139: http: panic serving 127.0.0.1:57342: html/template: "idnex.html" is undefined
+goroutine 55 [running]:
+net/http.(*conn).serve.func1(0xc00007c1e0)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1824 +0x153
+panic(0xd79b20, 0xc000408180)
+	C:/Users/xm/go/go1.16.3/src/runtime/panic.go:971 +0x49a
+github.com/gin-gonic/gin.(*Context).Render(0xc000314900, 0xc8, 0xede240, 0xc00040a450)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:914 +0x185
+github.com/gin-gonic/gin.(*Context).HTML(0xc000314900, 0xc8, 0xe1f453, 0xa, 0x0, 0x0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:923 +0xa5
+main.main.func1(0xc000314900)
+	C:/Users/xm/Desktop/GO_Materials/go.web/main/main.go:32 +0x58
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000384000, 0xc000314900)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:489 +0x2b0
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000384000, 0xee1130, 0xc00032a380, 0xc000314800)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:445 +0x165
+net/http.serverHandler.ServeHTTP(0xc00032a000, 0xee1130, 0xc00032a380, 0xc000314800)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc00007c1e0, 0xee2880, 0xc000304c00)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:3013 +0x3b8
+2021/05/20 16:05:28 server.go:3139: http: panic serving 127.0.0.1:57343: html/template: "idnex.html" is undefined
+goroutine 49 [running]:
+net/http.(*conn).serve.func1(0xc0003343c0)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1824 +0x153
+panic(0xd79b20, 0xc000064970)
+	C:/Users/xm/go/go1.16.3/src/runtime/panic.go:971 +0x49a
+github.com/gin-gonic/gin.(*Context).Render(0xc000314b00, 0xc8, 0xede240, 0xc0003fd290)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:914 +0x185
+github.com/gin-gonic/gin.(*Context).HTML(0xc000314b00, 0xc8, 0xe1f453, 0xa, 0x0, 0x0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:923 +0xa5
+main.main.func1(0xc000314b00)
+	C:/Users/xm/Desktop/GO_Materials/go.web/main/main.go:32 +0x58
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000384000, 0xc000314b00)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:489 +0x2b0
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000384000, 0xee1130, 0xc00032a540, 0xc000314c00)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:445 +0x165
+net/http.serverHandler.ServeHTTP(0xc00032a000, 0xee1130, 0xc00032a540, 0xc000314c00)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc0003343c0, 0xee2880, 0xc0000710c0)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:3013 +0x3b8
+2021/05/20 16:05:28 server.go:3139: http: panic serving 127.0.0.1:57349: html/template: "idnex.html" is undefined
+goroutine 89 [running]:
+net/http.(*conn).serve.func1(0xc000334000)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1824 +0x153
+panic(0xd79b20, 0xc000064120)
+	C:/Users/xm/go/go1.16.3/src/runtime/panic.go:971 +0x49a
+github.com/gin-gonic/gin.(*Context).Render(0xc000314200, 0xc8, 0xede240, 0xc0000c53e0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:914 +0x185
+github.com/gin-gonic/gin.(*Context).HTML(0xc000314200, 0xc8, 0xe1f453, 0xa, 0x0, 0x0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:923 +0xa5
+main.main.func1(0xc000314200)
+	C:/Users/xm/Desktop/GO_Materials/go.web/main/main.go:32 +0x58
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000384000, 0xc000314200)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:489 +0x2b0
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000384000, 0xee1130, 0xc00032a0e0, 0xc000314100)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:445 +0x165
+net/http.serverHandler.ServeHTTP(0xc00032a000, 0xee1130, 0xc00032a0e0, 0xc000314100)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc000334000, 0xee2880, 0xc000304000)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:3013 +0x3b8
+2021/05/20 16:05:29 server.go:3139: http: panic serving 127.0.0.1:57353: html/template: "idnex.html" is undefined
+goroutine 90 [running]:
+net/http.(*conn).serve.func1(0xc0003340a0)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1824 +0x153
+panic(0xd79b20, 0xc000064180)
+	C:/Users/xm/go/go1.16.3/src/runtime/panic.go:971 +0x49a
+github.com/gin-gonic/gin.(*Context).Render(0xc00042c100, 0xc8, 0xede240, 0xc0000c56e0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:914 +0x185
+github.com/gin-gonic/gin.(*Context).HTML(0xc00042c100, 0xc8, 0xe1f453, 0xa, 0x0, 0x0)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:923 +0xa5
+main.main.func1(0xc00042c100)
+	C:/Users/xm/Desktop/GO_Materials/go.web/main/main.go:32 +0x58
+github.com/gin-gonic/gin.(*Context).Next(...)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000384000, 0xc00042c100)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:489 +0x2b0
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000384000, 0xee1130, 0xc0003820e0, 0xc000156000)
+	C:/Users/xm/Desktop/GO_Materials/go.web/vendor/github.com/gin-gonic/gin/gin.go:445 +0x165
+net/http.serverHandler.ServeHTTP(0xc00032a000, 0xee1130, 0xc0003820e0, 0xc000156000)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:2887 +0xaa
+net/http.(*conn).serve(0xc0003340a0, 0xee2880, 0xc00029b340)
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	C:/Users/xm/go/go1.16.3/src/net/http/server.go:3013 +0x3b8
