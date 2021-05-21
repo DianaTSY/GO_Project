@@ -11,6 +11,8 @@ type DeleteController struct {
 	beego.Controller
 }
 func(c *DeleteController) Get(){
+	r:=models.ReadAllUser()
+	c.Data["res"] =r
 	c.TplName = "delete.html"
 }
 
@@ -25,5 +27,5 @@ func(c *DeleteController) Post(){
 		panic(err)
 	}
 	fmt.Println(id)
-	c.TplName="delete.html"
+	c.Get()
 }

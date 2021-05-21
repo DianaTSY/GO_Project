@@ -7,10 +7,12 @@
 <body>
 <h1 class="text-primary">Select</h1>
 <form action="/select" method="Post">
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Select User Id You Want to Update</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="userID" name="userID">
-    </div>
+    <select class="form-select" aria-label="Default select example" name="userID">
+        <option selected>Select A User</option>
+        {{range.res}}
+        <option value={{.Id}}>{{.User_name}}</option>
+        {{end}}}
+    </select>
     <button type="submit" class="btn btn-primary">Select</button>
     <button type="button" class="btn btn-outline-success" onclick="location.href='/index'">Home</button>
 </form>

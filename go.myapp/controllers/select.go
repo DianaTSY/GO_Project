@@ -12,6 +12,8 @@ type SelectController struct {
 }
 
 func(c *SelectController)Get(){
+	r := models.ReadAllUser()
+	c.Data["res"] =r
 	c.TplName= "select.html"
 }
 

@@ -5,14 +5,24 @@
 
 </head>
 <body>
-    <h1 class="text-primary">Delete</h1>
-    <form action="/delete" method="Post">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">User Id You Want to DELETE</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="userID" name="userID">
-        </div>
-        <button type="submit" class="btn btn-primary">Delete</button>
-        <button type="button" class="btn btn-outline-success" onclick="location.href='/index'">Home</button>
-    </form>
+<h1 class="text-primary">Delete</h1>
+<form action="/delete" method="Post">
+    <select class="form-select" aria-label="Default select example" name="userID">
+        <option selected>Select A User</option>
+        {{range.res}}
+        <option value={{.Id}}>{{.User_name}}</option>
+        {{end}}
+    </select>
+    <button type="submit" class="btn btn-primary">Delete</button>
+    <button type="button" class="btn btn-outline-success" onclick="location.href='/index'">Home</button>
+</form>
+
+<table class="table table-hover" id="demo">
+    <tr><th>Id</th><th>Username</th><th>Password</th></tr>
+    {{range.res}}
+        <tr id ><td>{{.Id}}</td><td>{{.User_name}}</td><td>{{.Password}}</td>
+        </tr>
+    {{end}}
+</table>
 </body>
 </html>
